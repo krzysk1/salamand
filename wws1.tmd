@@ -10,13 +10,12 @@
                 <[string8][Message][Aircraft.Mass]>
             >
             <[camera][Follow][]
-                <[string8][Tags][Behind aircraft]>
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][ -7.0 0.0 2.0 ]>
                 <[tmvector3d][Direction][1.0 0.0 0 .0]>
             >
             <[camera_head][PilotCamera][]
-                <[string8][Tags][Pilot seat]>
+                <[string8][Tags][cockpit pilot]>
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][ 0.77 0.0 -0.17 ]>
                 <[tmvector3d][Direction][ 0.957826 0.0 -0.287348 ]>
