@@ -8,7 +8,7 @@
         <[float64][PatternSpeed][17.3]>
         <[float64][InitialClimbSpeed][15.77]>
         <[float64][GlideRatio][15.2]>
-        <[int][EngineCount][0]>		
+        <[int][EngineCount][0]>
         <[bool][GeneralAviation][true]>
         <[bool][Glider][true]>
         <[bool][TailDragger][true]>

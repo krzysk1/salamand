@@ -2,7 +2,7 @@
     <[modelinformation][][]
         <[int32][Version][220]>
         <[list_vector4_float64][ContactSpheres][ (0.815 0.0 -1.32 0.03) (-3.944 0.0 -0.754 0.03) (-0.123 6.187 0.208 0.03) (-0.123 -6.187 0.208 0.03) ]>
-        <[stringt8c][ICAO][WWS1]>
+        <[stringt8c][ICAO][]>
         <[string8][DisplayName][WWS-1 Salamandra]>
         <[string8][DisplayNameFull][WWS-1 Salamandra]>
         <[list_localized_text][Descriptions][]

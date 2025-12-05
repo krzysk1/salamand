@@ -1,4 +1,5 @@
-# wws1
+# salamand
+
 WWS-1 Salamandra
 
 The W.W.S. 1 Salamandra (Salamander) was a single-seat training glider designed and built in Poland from 1936, and again from 1947 after World War II as IS-A Salamandra. Before the war the WWS 1 was exported to Yugoslavia, Finland and Estonia. On 29 December 1956 there flew an export version Salamandra 53A – around 50 were exported to China, and a licence production started there. In China there was also developed a primary trainer two-seater variant, without a cockpit. In Yugoslavia there was built a similar glider Čavka, and in Finland - PIK-5c. After migrating to Canada as a refugee, Wacław Czerwiński designed a modified Salamandra as the Czerwiński Sparrow, as well as an improved Sparrow designated Czerwiński Robin.
@@ -20,12 +21,12 @@ Credits for the authors of those works!
 Installation
 ============
 
-1. Unzip file and move the folder "wws1" into the C:\Users\~\Documents\Aerofly FS 4\aircraft folder.
+1. Unzip file and move the folder "salamand" into the C:\Users\~\Documents\Aerofly FS 4\aircraft folder.
 
 Uninstall
 =========
 
-1. Delete the folder "wws1".
+1. Delete the folder "salamand".
 
 
 Have a fun,

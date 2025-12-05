@@ -2,7 +2,7 @@
     <[modelmanager][][]
         <[pointer_list_tmcontrol][ControlObjects][]
 
-            <[control_cylinder][PressureSetting][3]
+            <[control_cylinder][PressureSetting][]
                 <[string8][Type][knob]>
                 <[vector3_float64][R0][1.18 -0.0382 -0.489]>
                 <[matrix3_float64][B0][  1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0  ]>
@@ -35,7 +35,7 @@
                 <[tmvector3d][Pivot][0.9250 -0.0 -1.0850]>
                 <[string8][InputTransform][ElevatorTransform.Output]>
             >
-            <[control_cylinder][StickGrip][11]
+            <[control_cylinder][StickGrip][]
                 <[string8][Type][stick]>
                 <[vector3_float64][R0][0.9634 -0.0031 -0.6029]>
                 <[matrix3_float64][B0][ 0.0  0.0  1.0  0.0  1.0  0.0 -1.0  0.0 0.0 ]>
@@ -56,17 +56,17 @@
                 <[float64][Radius][0.015]>
                 <[float64][Length][0.158]>
             >
-            <[control_input][AirBrakeLever][2]
+            <[control_input][AirBrakeLever][]
                 <[uint32][InputID][ServoAirBrakePhysical.Output]>
                 <[float64][Scaling][0.8]>
-                <[float64][Offset][-0.5]>				
+                <[float64][Offset][-0.5]>
             >
-            <[control_rotation][AirBrakeLeverTranslation][2]
+            <[control_rotation][AirBrakeLeverTranslation][]
                 <[string8][Input][AirBrakeLever.Output]>
                 <[tmvector3d][Axis][0.03828 -0.995267 0.08932]>
                 <[tmvector3d][Pivot][0.8838 0.2573 -0.8721]>
             >
-            <[control_sphere][AirBrakeLeverHandle][2]
+            <[control_sphere][AirBrakeLeverHandle][]
                 <[string8][Type][lever]>
                 <[vector3_float64][R0][0.8838 0.2298 -0.6765]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
@@ -80,7 +80,7 @@
                 >
                 <[float64][Radius][0.023]>
             >
-            <[control_sphere][AirBrakeLeverBase][2]
+            <[control_sphere][AirBrakeLeverBase][]
                 <[string8][Type][lever base]>
                 <[vector3_float64][R0][0.8847 0.2227 -0.8690]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
@@ -91,7 +91,7 @@
                 >
                 <[float64][Radius][0.023]>
             >
-            <[control_cylinder][HookHandle][3]
+            <[control_cylinder][HookHandle][]
                 <[string8][Type][button]>
                 <[vector3_float64][R0][1.085 0.1456 -0.5327]>
                 <[matrix3_float64][B0][ 0.0 1.0 0.0  1.0 0.0 0.0  0.0 0.0 1.0 ]>
@@ -104,7 +104,7 @@
                 >
                 <[float64][Radius][0.008]>
                 <[float64][Length][0.046]>
-            >			
+            >
         >
     >
 >
