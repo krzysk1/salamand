@@ -1,9 +1,12 @@
 <[file][][]
     <[hints][][]
         // WWS-1 Salamandra
-        <[float64][MaximumTakeOffMass][225.0]>
-        <[float64][WingSpan][12.48]>
-        <[float64][WingArea][17.95]>
+        <[float64][MaximumTakeoffMass][190.0]>
+        <[float64][DefaultGrossMass][180.0]>
+        <[float64][WingSpan][12.5]>
+        <[float64][WingArea][16.9]>
+        <[float64][LEMAC][0.665]>
+        <[float64][MAC][1.599]>
         <[float64][ApproachSpeed][13.3]>
         <[float64][PatternSpeed][17.3]>
         <[float64][InitialClimbSpeed][15.77]>
@@ -12,7 +15,7 @@
         <[bool][GeneralAviation][true]>
         <[bool][Glider][true]>
         <[bool][TailDragger][true]>
-        <[float64][PitchTrimTakeOff][0.0]>
+        <[float64][PitchTrimTakeoff][0.0]>
         <[float64][PitchTrimWinch][0.0]>
         <[float64][PitchTrimTow][0.0]>
         <[float64][ElevatorGain][1.0]>

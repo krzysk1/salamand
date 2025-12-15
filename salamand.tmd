@@ -5,10 +5,6 @@
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][LookAtPosition][ 0.7 0.0 -0.2 ]>
             >
-            <[sender][SenderMass][]
-                <[string8][Input][225.0]>
-                <[string8][Message][Aircraft.Mass]>
-            >
             <[camera][Follow][]
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][ -7.0 0.0 2.0 ]>
@@ -25,15 +21,19 @@
                 <[float64][Dt][0.02]>
                 <[bool][InCockpit][true]>
             >
+            <[aircraft_masses][ActualAircraftMasses][]
+                <[float64][LEMAC][0.665]>
+                <[float64][MAC]  [1.599]>
+            >
 
             <[rigidbody][Fuselage][]
-                <[float64][Mass][83.4]>
+                <[float64][Mass][63.0]>
                 <[tmvector3d][InertiaLength][2.8457 0.6394 1.3231]>
-                <[tmvector3d][R0][0.6306 0.0 -0.5491]>
+                <[tmvector3d][R0][-0.2 0.0 -0.4]>
                 <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
             >
             <[rigidbody][LeftWing][]
-                <[float64][Mass][22.5]>
+                <[float64][Mass][18.5]>
                 <[tmvector3d][InertiaLength][ 1.5990 6.0713 0.20 ]>
                 <[tmvector3d][R0][-0.1341 3.11935 0.1118]>
                 <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
@@ -48,7 +48,7 @@
                 <[uint32][Type][0]>
             >
             <[rigidbody][RightWing][]
-                <[float64][Mass][22.5]>
+                <[float64][Mass][18.5]>
                 <[tmvector3d][InertiaLength][ 1.5990 6.0713 0.20 ]>
                 <[tmvector3d][R0][-0.1341 -3.11935 0.1118]>
                 <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
@@ -63,7 +63,7 @@
                 <[uint32][Type][0]>
             >
             <[rigidbody][Stabilizer][]
-                <[float64][Mass][12.5]>
+                <[float64][Mass][10.0]>
                 <[tmvector3d][InertiaLength][ 1.0224 2.9804 0.10 ]>
                 <[tmvector3d][R0][-3.6139 0.0 0.0517]>
                 <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
@@ -141,6 +141,19 @@
                 <[float64][Length][0.2]>
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][-3.9439 0.0 -0.7844]>
+            >
+            <[persons][PilotBody][]
+                <[float64][Mass][70.0]>
+                <[string8][Body][Fuselage]>
+                <[tmvector3d][InertiaLength][ 0.6 0.5 0.8 ]>
+                <[tmvector3d][R0][0.78 0 -0.6]>
+                <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
+                <[float64][MinimumPersons][1.0]>
+                <[float64][MaximumPersons][1.0]>
+            >
+            <[aircraft_masses][ActualAircraftMasses][]
+                <[float64][LEMAC][0.665]>
+                <[float64][MAC]  [1.599]>
             >
 
             <[aerofuselage][FuselageAero][]
@@ -925,8 +938,7 @@
                 <[uint32][AttachTo][0]>
             >
 
-			// instruments
-
+            // instruments
             <[graphics_input][80mm_asi_6fms4_needleInput][]
                 <[uint32][InputID][AirspeedIndicatorNeedle.Output]>
                 <[float64][Scaling][3.6]>
@@ -934,14 +946,14 @@
             <[graphics_linear_interpolation][80mm_asi_6fms4_needleMapping][]
                 <[string8][Input][80mm_asi_6fms4_needleInput.Output]>
                 <[tmvector2d][Map][ (0.0 0.0)
-									(30 0.61087)
-									(40 1.08210)
-									(50 1.57080)
-									(78 3.14159)
-									(100 3.92699)
-									(140 5.49779)
-									(150 5.93412)
-									(160 6.28319) ]>
+                                    (30 0.61087)
+                                    (40 1.08210)
+                                    (50 1.57080)
+                                    (78 3.14159)
+                                    (100 3.92699)
+                                    (140 5.49779)
+                                    (150 5.93412)
+                                    (160 6.28319) ]>
             >
             <[hingedbodygraphics][AirspeedNeedle][]
                 <[string8][GeometryList][ Needle ]>
@@ -983,8 +995,7 @@
                 <[float64][Scaling][0.000428]>
             >
 
-			// pilot
-
+            // pilot
             <[rigidbodygraphics][PilotBody][]
                 <[string8][GeometryList][ Mesh01 Mesh02 Mesh0302 Mesh04 Mesh0401 Mesh05 Mesh06 Mesh0601 Mesh07 Mesh08 Mesh09 Mesh10 Mesh11 Mesh12 Mesh13 Mesh14 Mesh15 Mesh16 Mesh17 Mesh18 ]>
                 <[uint32][PositionID][Fuselage.R]>
@@ -995,7 +1006,7 @@
                 <[uint32][InputID][UniversalTime.Output]>
             >
             <[graphics_flasher][BeaconRotation][]
-				<[string8][Function][Triangle]>
+                <[string8][Function][Triangle]>
                 <[string8][InputTime][UniversalTimeInput.Output]>
                 <[float64][Period][18.493]>
                 <[float64][Minimum][0.0]>
